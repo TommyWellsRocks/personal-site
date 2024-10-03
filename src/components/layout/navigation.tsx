@@ -1,0 +1,31 @@
+import Link from "next/link";
+
+export function Navigation() {
+  const navItems = [
+    { name: "Home", link: "/" },
+    { name: "Experience", link: "/#experience" },
+    { name: "Projects", link: "/#projects" },
+  ];
+  return (
+    <header className="fixed left-0 right-0 top-0 z-10 px-10 backdrop-blur-md">
+      <div className="flex items-center justify-between py-4 text-slate-500">
+        <Link
+          className="text-4xl font-bold transition duration-300 hover:text-slate-300"
+          href="/"
+        >
+          TW
+        </Link>
+        <nav className="flex gap-x-4 text-lg font-semibold">
+          {navItems.map((item) => (
+            <Link
+              href={item.link}
+              className="transition duration-300 hover:text-slate-300"
+            >
+              {item.name}
+            </Link>
+          ))}
+        </nav>
+      </div>
+    </header>
+  );
+}
