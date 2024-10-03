@@ -70,7 +70,7 @@ export function ExperienceSection() {
           </div>
         ))}
       </div>
-      <LinkTo label="Full Résumé" href="" />
+      {/* <LinkTo label="Full Résumé" href="" /> */}
     </Section>
   );
 }
