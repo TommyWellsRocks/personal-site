@@ -1,9 +1,11 @@
 import "~/styles/globals.css";
 
 import { GeistSans } from "geist/font/sans";
-import { type Metadata } from "next";
+import { Analytics } from "@vercel/analytics/react";
 import { Navigation } from "~/components/layout/Navigation";
 import { Footer } from "~/components/layout/Footer";
+
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Tommy Wells",
@@ -23,6 +25,7 @@ export default function RootLayout({
         <Navigation />
         {children}
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
