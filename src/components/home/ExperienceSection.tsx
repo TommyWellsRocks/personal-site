@@ -1,7 +1,6 @@
 import { Section } from "../Section";
 import { SectionHeader } from "../SectionHeader";
 import { ToolList } from "../ToolList";
-import { LinkTo } from "../Linkto";
 
 export function ExperienceSection() {
   const experiences = [
@@ -51,8 +50,8 @@ export function ExperienceSection() {
       <SectionHeader header="Experience" />
 
       <div className="flex flex-col gap-y-10">
-        {experiences.map((position) => (
-          <div className="flex scroll-mt-[100px]" id={position.id}>
+        {experiences.map((position, index) => (
+          <div key={index} className="flex scroll-mt-[100px]" id={position.id}>
             <span className="min-w-[200px] text-sm text-slate-500">
               {position.duration.toUpperCase()}
             </span>

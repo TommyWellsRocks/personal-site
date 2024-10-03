@@ -8,23 +8,23 @@ export function AboutSection() {
       <SectionHeader header="about" />
 
       <div className="flex flex-col gap-y-4">
-        <span>Hi, I'm Tommy!</span>
+        <span>Hi, I&apos;m Tommy!</span>
 
         <span>
-          I've been blessed with an unconventional journey. Instead of college,
+          I&apos;ve been blessed with an unconventional journey. Instead of college,
           I spent several years diving into entrepreneurship—ventures like{" "}
           <TextLink href="#desirem">
             dropshipping, arbitrage, reselling
           </TextLink>
           , and even <TextLink href="#buffdup">concrete coatings</TextLink>, far
-          outside my comfort zone. Though they didn't all succeed, I wouldn't
+          outside my comfort zone. Though they didn&apos;t all succeed, I wouldn&apos;t
           consider them failures. I learned invaluable lessons on resilience,
           the requirement of lifelong learning, and the power of loving the
           process.
         </span>
 
         <span>
-          Since the start of 2024, I've immersed myself in{" "}
+          Since the start of 2024, I&apos;ve immersed myself in{" "}
           <TextLink href="#learning">code 24/7</TextLink>, and yes, even I dream
           about it. From the beginning, I was in love. I started with python,
           but after trying to code a web app with it 🤣, I then learned
@@ -38,7 +38,7 @@ export function AboutSection() {
         </span>
 
         <span>
-          Outside of work, you'll find me at the gym, binging movies, or jamming
+          Outside of work, you&apos;ll find me at the gym, binging movies, or jamming
           to the Bee Gees on a sunday drive.
         </span>
       </div>

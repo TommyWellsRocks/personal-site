@@ -16,8 +16,9 @@ export function Navigation() {
           TW
         </Link>
         <nav className="flex gap-x-4 text-lg font-semibold">
-          {navItems.map((item) => (
+          {navItems.map((item, index) => (
             <Link
+              key={index}
               href={item.link}
               className="transition duration-300 hover:text-slate-300"
             >

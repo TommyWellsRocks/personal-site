@@ -33,8 +33,8 @@ export function ProjectsSection() {
       <SectionHeader header="Projects" />
 
       <div className="flex flex-col gap-y-8">
-        {projects.map((project) => (
-          <div className="group flex items-center gap-x-4">
+        {projects.map((project, index) => (
+          <div key={index} className="group flex items-center gap-x-4">
             <Link href={project.link}>
               <Image
                 src={project.img}

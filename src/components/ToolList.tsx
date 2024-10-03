@@ -5,8 +5,8 @@ function ToolItem({ tool }: { tool: string }) {
 export function ToolList({ tools }: { tools: string[] }) {
   return (
     <div className="flex flex-wrap gap-2 text-xs">
-      {tools.map((tool) => (
-        <ToolItem tool={tool} />
+      {tools.map((tool, index) => (
+        <ToolItem key={index} tool={tool} />
       ))}
     </div>
   );
