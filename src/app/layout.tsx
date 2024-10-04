@@ -21,7 +21,7 @@ export default function RootLayout({
       lang="en"
       className={`${GeistSans.variable} bg-slate-900 text-slate-400`}
     >
-      <body className="mt-32 flex min-h-screen flex-col gap-y-12 px-10">
+      <body className="mt-32 flex min-h-screen flex-col gap-y-12 px-4 sm:px-10">
         <HeaderNav />
         {children}
         <Footer />

@@ -34,7 +34,7 @@ export function ProjectsSection() {
 
       <div className="flex flex-col gap-y-8">
         {projects.map((project, index) => (
-          <div key={index} className="group flex items-center gap-x-4">
+          <div key={index} className="group flex flex-col sm:flex-row gap-y-4 sm:items-center sm:gap-x-4">
             <Link href={project.link}>
               <Image
                 src={project.img}

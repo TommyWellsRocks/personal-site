@@ -51,8 +51,8 @@ export function ExperienceSection() {
 
       <div className="flex flex-col gap-y-10">
         {experiences.map((position, index) => (
-          <div key={index} className="flex scroll-mt-[100px]" id={position.id}>
-            <span className="min-w-[200px] text-sm text-slate-500">
+          <div key={index} className="flex flex-col sm:flex-row scroll-mt-[100px]" id={position.id}>
+            <span className="min-w-[200px] text-xs sm:text-sm text-slate-500">
               {position.duration.toUpperCase()}
             </span>
 
