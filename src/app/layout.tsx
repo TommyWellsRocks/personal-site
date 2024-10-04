@@ -2,7 +2,7 @@ import "~/styles/globals.css";
 
 import { GeistSans } from "geist/font/sans";
 import { Analytics } from "@vercel/analytics/react";
-import { Navigation } from "~/components/layout/Navigation";
+import { HeaderNav } from "~/components/layout/HeaderNav";
 import { Footer } from "~/components/layout/Footer";
 
 import type { Metadata } from "next";
@@ -22,7 +22,7 @@ export default function RootLayout({
       className={`${GeistSans.variable} bg-slate-900 text-slate-400`}
     >
       <body className="mt-32 flex min-h-screen flex-col gap-y-12 px-10">
-        <Navigation />
+        <HeaderNav />
         {children}
         <Footer />
         <Analytics />

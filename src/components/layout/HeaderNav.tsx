@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export function Navigation() {
+export function HeaderNav() {
   const navItems = [
     { name: "Home", link: "/" },
     { name: "Experience", link: "/#experience" },
