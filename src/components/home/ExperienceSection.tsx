@@ -1,5 +1,6 @@
 import { Section } from "../Section";
 import { SectionHeader } from "../SectionHeader";
+import { TextLink } from "../TextLink";
 import { ToolList } from "../ToolList";
 
 export function ExperienceSection() {
@@ -10,8 +11,18 @@ export function ExperienceSection() {
       company: "",
       role: "Fulltime Explorer",
       companyLink: null,
-      description:
-        "Learning front and backend software development. Through hands-on projects like Temple and website for Marvelous Light Media, I've had the opportunity to collaborate with others to design and build full stack applications. Along the way, I've worked with version control, containerization, SQL databases, testing frameworks, production deployments, web scraping, design tools, and various popular libraries.",
+      description: (
+        <>
+          Learning front and backend software development.Through hands- on
+          projects like <TextLink href="#temple">Temple</TextLink> and website for{" "}
+          <TextLink href="#mlm">Marvelous Light Media</TextLink>, I've had the
+          opportunity to collaborate with others to design and build full stack
+          applications. Along the way, I've worked with version control,
+          containerization, SQL databases, testing frameworks, production
+          deployments, web scraping, design tools, and various popular
+          libraries.
+        </>
+      ),
       tools: [
         "Python",
         "Javascript",
@@ -51,8 +62,12 @@ export function ExperienceSection() {
 
       <div className="flex flex-col gap-y-10">
         {experiences.map((position, index) => (
-          <div key={index} className="flex flex-col sm:flex-row scroll-mt-[100px]" id={position.id}>
-            <span className="min-w-[200px] text-xs sm:text-sm text-slate-500">
+          <div
+            key={index}
+            className="flex scroll-mt-[100px] flex-col sm:flex-row"
+            id={position.id}
+          >
+            <span className="min-w-[200px] text-xs text-slate-500 sm:text-sm">
               {position.duration.toUpperCase()}
             </span>
 
