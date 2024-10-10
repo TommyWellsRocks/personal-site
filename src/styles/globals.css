@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.fancy-text-shadow {
+  text-shadow:
+    4px 4px 0px #ffb650,
+    8px 8px 0px #ffd662,
+    12px 12px 0px #ff80bf,
+    16px 16px 0px #ef5097,
+    20px 20px 0px #6868ac,
+    24px 24px 0px #90b1e0;
+}
+
+.hover-fancy-text-shadow:hover {
+  text-shadow:
+    2px 2px 0px #ffb650,
+    4px 4px 0px #ffd662,
+    6px 6px 0px #ff80bf,
+    8px 8px 0px #ef5097,
+    10px 10px 0px #6868ac,
+    12px 12px 0px #90b1e0;
+}
+
+@layer base {
+  :root {
+    --radius:
+    0.5rem;
+  }
+}

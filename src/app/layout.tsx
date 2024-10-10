@@ -1,9 +1,9 @@
 import "~/styles/globals.css";
 
 import { GeistSans } from "geist/font/sans";
-import { Analytics } from "@vercel/analytics/react";
 import { HeaderNav } from "~/components/layout/HeaderNav";
 import { Footer } from "~/components/layout/Footer";
+import { Analytics } from "@vercel/analytics/react";
 
 import type { Metadata } from "next";
 
@@ -21,9 +21,9 @@ export default function RootLayout({
       lang="en"
       className={`${GeistSans.variable} bg-slate-900 text-slate-400`}
     >
-      <body className="mt-32 flex min-h-screen flex-col gap-y-12 px-4 sm:px-10">
+      <body className="flex min-h-screen flex-col items-center gap-y-12 px-4 sm:px-10">
         <HeaderNav />
-        {children}
+        <main className="w-full max-w-[700px] my-32">{children}</main>
         <Footer />
         <Analytics />
       </body>
