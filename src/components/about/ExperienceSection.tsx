@@ -12,7 +12,7 @@ export function ExperienceSection() {
       companyLink: null,
       description: (
         <>
-          Learning front and backend software development.Through hands- on
+          Learning front and backend software development. Through hands- on
           projects like <TextLink href="/projects#temple">Temple</TextLink> and website
           for <TextLink href="/projects#mlm">Marvelous Light Media</TextLink>, I&apos;ve had
           the opportunity to collaborate with others to design and build full
