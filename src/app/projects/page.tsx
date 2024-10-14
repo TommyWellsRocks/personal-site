@@ -19,7 +19,7 @@ const projects = [
     name: "Temple",
     img: TemplePreview,
     githubLink: "",
-    shortSummary: "Workout app to build and record workouts.",
+    shortSummary: "Fitness app to build and record workouts.",
     description:
       "Fitness app for recording and creating workouts. Build your own workout programs with days with any of our over 4000 exercises (or create your own). Record sets, view history, keep notes, and more.",
     tools: ["React", "Next.js", "PostgreSQL", "Vercel", "Zustand"],
@@ -31,7 +31,7 @@ const projects = [
     name: "Marvelous Light Media",
     img: MLMPreview,
     githubLink: "",
-    shortSummary: "Wedding videographer website.",
+    shortSummary: "Wedding videography website.",
     description:
       "Website for Haley Harris at Marvelous Light Media, a wedding videography company here in Nashville.",
     tools: ["React", "Next.js", "Netlify", "CDN"],
