@@ -1,62 +1,13 @@
-import { TextLink } from "../TextLink";
 import { ToolList } from "../ToolList";
 import { SectionHeader } from "./SectionHeader";
 
-export function ExperienceSection() {
-  const experiences = [
-    {
-      id: "learning",
-      duration: "Jan 2024 - Present",
-      company: "",
-      role: "Fulltime Explorer",
-      companyLink: null,
-      description: (
-        <>
-          Learning front and backend software development. Through hands- on
-          projects like <TextLink href="/projects#temple">Temple</TextLink> and website
-          for <TextLink href="/projects#mlm">Marvelous Light Media</TextLink>, I&apos;ve had
-          the opportunity to collaborate with others to design and build full
-          stack applications. Along the way, I&apos;ve worked with version control,
-          containerization, SQL databases, testing frameworks, production
-          deployments, web scraping, design tools, and various popular
-          libraries.
-        </>
-      ),
-      tools: [
-        "Python",
-        "Javascript",
-        "TypeScript",
-        "React",
-        "Go",
-        "HTML & CSS",
-        "SQL",
-        "Next.js",
-      ],
-    },
-    {
-      id: "buffdup",
-      duration: "Jul 2023 - Dec 2023",
-      company: "Buff'd Up Coatings",
-      role: "Founder",
-      companyLink: null,
-      description:
-        "Dedicated six months to launching a concrete coatings company, focusing on market research, business strategy, and branding. Gained hands-on experience in business development, supplier relations, and the value of thorough preparation.",
-      tools: null,
-    },
-    {
-      id: "desirem",
-      duration: "Jan 2020 - May 2023",
-      company: "Desirem",
-      role: "Founder",
-      companyLink: null,
-      description:
-        "Launched and managed all aspects of an online retail business, achieving 125% annual growth over 3 years. Optimized product selection and inventory management, reducing fulfillment costs by 10%. Enhanced customer experience with data-driven landing page and funnel optimizations. Led successful ad campaigns across Facebook, Instagram, and TikTok, maintaining a 95% customer satisfaction rating.",
-      tools: null,
-    },
-  ];
+import { experiences } from "~/data/experiences";
+import { ArrowUpRight } from "lucide-react";
+import Link from "next/link";
 
+export function ExperienceSection() {
   return (
-    <section className="flex flex-col gap-y-8">
+    <section className="flex flex-col items-start gap-y-8">
       <SectionHeader header="Experience" />
       <div className="flex flex-col gap-y-10">
         {experiences.map((position, index) => (
@@ -82,7 +33,15 @@ export function ExperienceSection() {
           </div>
         ))}
       </div>
-      {/* <LinkTo label="Full Résumé" href="" /> */}
+      <Link
+        target="_blank"
+        href="/resume.pdf"
+        className="text-slate-300 hover:text-slate-100"
+      >
+        <span className="flex">
+          Full Résumé <ArrowUpRight size={15} />
+        </span>
+      </Link>
     </section>
   );
 }
