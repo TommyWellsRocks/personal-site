@@ -41,9 +41,9 @@ export const experiences = [
       <>
         Dedicated six months to launching a concrete coatings company, learning
         all the ins and outs, planning the whole marketing scheme, and investing
-        a lot of money. But it's best summarized as:{" "}
+        a lot of money. But it&apos;s best summarized as:{" "}
         <span className="italic">
-          'Hands-on experience with suppliers and execution challenges.'
+          &apos;Hands-on experience with suppliers and execution challenges.&apos;
         </span>
       </>
     ),
