@@ -29,7 +29,7 @@ export default function Home() {
 
           <span>
             <TextLink href="/about#learning">Since the start of 2024</TextLink>,
-            I&apos;ve immersed myself in code 24/7, and yes, even I dream about
+            I&apos;ve immersed myself in code 24/7, and yes, I even dream about
             it. From the beginning, I was in love. I started with python, but
             after trying to code a web app with it 🤣, I then learned
             Javascript, Typescript, React, and recently, Go.
