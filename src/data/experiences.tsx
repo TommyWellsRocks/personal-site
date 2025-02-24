@@ -4,19 +4,17 @@ export const experiences = [
   {
     id: "learning",
     duration: "Jan 2024 - Present",
-    company: "",
-    role: "Fulltime Explorer",
+    company: "YetWise",
+    role: "Full Stack Developer",
     companyLink: null,
     description: (
       <>
-        Learning front and backend software development. Through hands- on
-        projects like <TextLink href="/projects#temple">Temple</TextLink>,{" "}
-        <TextLink href="/projects#inmeasure">InMeasure</TextLink>, a website for{" "}
+        Freelance developer, building fullstack projects. Worked with designers,
+        clients, and all the fancy tools to develop projects like{" "}
+        <TextLink href="/projects#temple">Temple</TextLink>,{" "}
+        <TextLink href="/projects#inmeasure">InMeasure</TextLink>,{" "}
         <TextLink href="/projects#mlm">Marvelous Light Media</TextLink>, and{" "}
-        <TextLink href="/projects#this">this wonderful site</TextLink>,
-        I&apos;ve had the opportunity to collaborate with others to design and
-        build full stack applications. Along the way, I&apos;ve picked up a few
-        languages, and had an opportunity to work with all the go-to tools.
+        <TextLink href="/projects#this">this wonderful site</TextLink>.
       </>
     ),
     tools: [
@@ -43,7 +41,7 @@ export const experiences = [
         all the ins and outs, planning the whole marketing scheme, and investing
         a lot of money. But it&apos;s best summarized as:{" "}
         <span className="italic">
-          &apos;Hands-on experience with suppliers and execution challenges.&apos;
+          Hands-on experience with suppliers and execution challenges.
         </span>
       </>
     ),
