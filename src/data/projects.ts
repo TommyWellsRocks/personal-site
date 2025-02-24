@@ -1,6 +1,6 @@
 import TemplePreview from "public/TemplePreview.png";
 import MLMPreview from "public/MLMPreview.png";
-import ThisPreview from "public/ThisPreview.jpg";
+import ThisPreview from "public/ThisPreview.png";
 import InMeasurePreview from "public/InMeasurePreview.png";
 
 export const projects = [
@@ -35,7 +35,7 @@ export const projects = [
     githubLink: "https://github.com/TommyWellsRocks/tommywells.me",
     shortSummary: "This wonderful site.",
     description: "A portfolio / resume site to show off some of my work.",
-    tools: ["React", "Next.js"],
+    tools: ["React", "Next.js", "Vercel"],
     link: "https://www.tommywells.me",
     video: "",
   },
