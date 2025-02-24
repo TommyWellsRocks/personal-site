@@ -5,15 +5,15 @@ export function ValuesSection() {
     {
       name: "Unimpeachable Character",
       description:
-        "[Character] of such a high standard of honesty and moral goodness that it cannot be doubted or criticized. - Cambridge Dictionary",
+        "The quality of moral goodness that is trusted and relied on.",
     },
     {
       name: "Sincere Candor",
       description:
-        "The quality of being honest, sincere, and kind in dealing with other people. - Cambridge Dictionary",
+        "The quality of being honest and direct for the greater good.",
     },
     {
-      name: "How To Take Care Of Business",
+      name: "Ownership",
       description:
         "The quality of figuring it out, getting it done, and doing it right.",
     },
@@ -21,12 +21,7 @@ export function ValuesSection() {
 
   return (
     <section className="flex flex-col gap-y-6">
-      <div className="flex items-center gap-x-6">
-        <SectionHeader header="Values" />
-        <span className="text-xs text-slate-600">
-          - Inspired by Alex Hormozi.
-        </span>
-      </div>
+      <SectionHeader header="Values" />
       <div className="flex scroll-mt-[100px] flex-col justify-center gap-y-4">
         {valueItems.map((item, index) => (
           <div
