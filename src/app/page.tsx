@@ -14,36 +14,29 @@ export default function Home() {
 
           <span>
             I&apos;ve been blessed with an unconventional journey. Instead of
-            college, I spent several years diving into entrepreneurship—ventures
-            like{" "}
-            <TextLink href="/about#desirem">
-              dropshipping, arbitrage, reselling
-            </TextLink>
-            , and even{" "}
-            <TextLink href="/about#buffdup">concrete coatings</TextLink>, far
-            outside my comfort zone. Though they didn&apos;t all succeed, I
-            wouldn&apos;t consider them failures. I learned invaluable lessons
-            on resilience, the requirement of lifelong learning, and the power
-            of loving the process.
+            college, I went to work in entrepreneurship from{" "}
+            <TextLink href="/about#desirem">e-commerce</TextLink> all the way to{" "}
+            <TextLink href="/about#buffdup">concrete coatings</TextLink>. I
+            learned priceless lessons on resilience, lifelong learning, and the
+            power of loving the process.
           </span>
 
           <span>
-            <TextLink href="/about#learning">Since the start of 2024</TextLink>,
-            I&apos;ve immersed myself in code 24/7, and yes, I even dream about
-            it. From the beginning, I was in love. I started with python, but
-            after trying to code a web app with it 🤣, I then learned
-            Javascript, Typescript, React, and recently, Go.
+            <TextLink href="/about#learning">From the start of 2024</TextLink>,
+            I started and fell in love with coding. After trying to code a web
+            app with python 🤣, I then learned Javascript, Typescript, React,
+            and recently, Go.
           </span>
 
           <span>
-            I love working across both front and back end. Building, optimizing,
-            and simplifying is my obsession. Figuring out ways to make life
-            simpler AND more efficient... that, really, really gets me excited.
+            I love working on frontend and backend. Building, optimizing, and
+            simplifying is my obsession. Figuring out ways to make life simpler
+            AND more efficient... that, really, really gets me excited.
           </span>
 
           <span>
             <TextLink href="/about#outside-work">Outside of work</TextLink>,
-            you&apos;ll find me at the gym, binging movies, or jamming to the
+            you&apos;ll find me at the gym, watching movies, or jamming to the
             Bee Gees on a sunday drive.
           </span>
         </div>
