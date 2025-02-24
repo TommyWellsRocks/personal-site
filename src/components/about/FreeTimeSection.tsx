@@ -1,11 +1,11 @@
 import { SectionHeader } from "./SectionHeader";
-import { Dot } from "lucide-react";
 
 export function FreeTimeSection() {
   const freeTimeActivities = [
     "Driving country roads.",
     "Spending too many hours at the gym.",
     "Listening to anything but county music.",
+    "Dreaming big.",
   ];
 
   return (
@@ -14,10 +14,10 @@ export function FreeTimeSection() {
       id="outside-work"
     >
       <SectionHeader header="When I'm Not In The Chair, I'm" />
-      <div className="flex flex-col">
+      <div className="flex flex-col gap-y-2">
         {freeTimeActivities.map((item, index) => (
-          <span key={index} className="flex">
-            <Dot /> {item}
+          <span key={index} className="flex text-slate-200">
+            • {item}
           </span>
         ))}
       </div>
