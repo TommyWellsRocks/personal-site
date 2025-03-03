@@ -8,7 +8,7 @@ export const projects = [
     id: "temple",
     name: "Temple",
     img: TemplePreview,
-    githubLink: "https://github.com/TommyWellsRocks/temple",
+    githubLink: "",
     shortSummary: "Fitness app to build and record workouts.",
     description:
       "Fitness app for recording and creating workouts. Customize workouts, record sets, view history, keep notes, and more.",
@@ -32,7 +32,7 @@ export const projects = [
     id: "this",
     name: "TommyWells.me",
     img: ThisPreview,
-    githubLink: "https://github.com/TommyWellsRocks/tommywells.me",
+    githubLink: "",
     shortSummary: "This wonderful site.",
     description: "A portfolio / resume site to show off some of my work.",
     tools: ["React", "Next.js", "Vercel"],
