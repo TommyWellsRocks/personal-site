@@ -15,14 +15,14 @@ export default function Home() {
           <span>
             I&apos;ve been blessed with an unconventional journey. Instead of
             college, I went to work in entrepreneurship from{" "}
-            <TextLink href="/about#desirem">e-commerce</TextLink> all the way to{" "}
-            <TextLink href="/about#buffdup">concrete coatings</TextLink>. I
+            <TextLink href="/about#swftw">e-commerce</TextLink> all the way to{" "}
+            <TextLink href="/about#buffd-up-coatings">concrete coatings</TextLink>. I
             learned priceless lessons on resilience, lifelong learning, and the
             power of loving the process.
           </span>
 
           <span>
-            <TextLink href="/about#learning">From the start of 2024</TextLink>,
+            <TextLink href="/about#temple">From the start of 2024</TextLink>,
             I started and fell in love with coding. After trying to code a web
             app with python 🤣, I then learned Javascript, Typescript, React,
             and recently, Go.

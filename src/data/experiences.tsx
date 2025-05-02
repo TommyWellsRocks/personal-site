@@ -1,60 +1,114 @@
-import { TextLink } from "~/components/TextLink";
-
 export const experiences = [
   {
-    id: "learning",
-    duration: "Jan 2024 - Present",
-    company: "YetWise",
-    role: "Full Stack Developer",
-    companyLink: null,
-    description: (
-      <>
-        Freelance developer, building fullstack projects. Worked with designers,
-        clients, and all the fancy tools to develop projects like{" "}
-        <TextLink href="/projects#temple">Temple</TextLink>,{" "}
-        <TextLink href="/projects#inmeasure">InMeasure</TextLink>,{" "}
-        <TextLink href="/projects#mlm">Marvelous Light Media</TextLink>, and{" "}
-        <TextLink href="/projects#this">this wonderful site</TextLink>.
-      </>
-    ),
-    tools: [
-      "Python",
-      "Javascript",
-      "TypeScript",
-      "Go",
-      "HTML & CSS",
-      "SQL",
-      "React",
-      "Next.js",
-      "AWS",
+    id: "bedroc",
+    duration: "Apr 2025 - May 2025",
+    company: "Bedroc",
+    companyLink: "https://bedroc.com/",
+    companyDescription: "IT Resources Firm",
+    role: "Freelance Full Stack Developer",
+    bullets: [
+      `
+        Built and deployed full-stack TypeScript/React/Next.js site under 4
+        weeks.
+      `,
+      `Integrated Contentful CMS for non-technical content management.`,
     ],
+    tools: ["TypeScript", "React", "Next.js", "Contentful", "Vercel"],
+    location: "Remote",
   },
   {
-    id: "buffdup",
+    id: "inmeasure",
+    duration: "Nov 2024 - Dec 2024",
+    company: "InMeasure",
+    companyLink: "https://inmeasure.com/",
+    companyDescription: "Website Analytics Platform",
+    role: "Personal Project",
+    bullets: [
+      `
+        Developed tool with React/TypeScript/PostgreSQL/Next.js handling 405+
+        daily requests.
+      `,
+      `
+        Enabled one-line code integration for real-time data collection across 3
+        sites.
+      `,
+    ],
+    tools: ["React", "Next.js", "TypeScript", "PostgreSQL", "Vercel"],
+    location: "Remote",
+  },
+  {
+    id: "marvelous-light-media",
+    duration: "Jul 2024 - Aug 2024",
+    company: "Marvelous Light Media",
+    companyLink: "https://marvelouslightmedia.com/",
+    companyDescription: "Wedding Videography Company",
+    role: "Wedding Videography Company",
+    bullets: [
+      `
+      Launched React/Next.js site scoring a 92+ Lighthouse score across
+      devices.
+      `,
+      `
+      Boosted organic traffic 36%, achieving #1 Google rank for brand
+      keywords.
+      `,
+      `Cut load times 80% and bandwidth costs 70% with global CDN.`,
+    ],
+    tools: ["React", "Next.js", "Netlify"],
+    location: "Remote",
+  },
+  {
+    id: "temple",
+    duration: "May 2024 - Dec 2024",
+    company: "Temple",
+    companyLink: "https://trytemple.com/",
+    companyDescription: "Fitness Tracking Platform",
+    role: "Personal Project",
+    bullets: [
+      `
+        Engineered a TypeScript/React/PostgreSQL/Next.js application with 200+
+        logged workouts.
+      `,
+      `
+        Scraped 4,000+ exercises via Python/Go, saving 65+ manual dev hours.
+      `,
+      `Reduced database queries by 90%, reducing load times by 1.8s.`,
+    ],
+    tools: ["React", "Next.js", "TypeScript", "PostgreSQL", "Vercel"],
+    location: "Remote",
+  },
+  {
+    id: "buffd-up-coatings",
     duration: "Jul 2023 - Dec 2023",
-    company: "Buff'd Up Coatings",
+    company: "Buff'd Up Coatings, LLC",
+    companyLink: "",
+    companyDescription: "Concreate Coatings Startup",
     role: "Founder",
-    companyLink: null,
-    description: (
-      <>
-        Dedicated six months to launching a concrete coatings company, learning
-        all the ins and outs, planning the whole marketing scheme, and investing
-        a lot of money. But it&apos;s best summarized as:{" "}
-        <span className="italic">
-          Hands-on experience with suppliers and execution challenges.
-        </span>
-      </>
-    ),
-    tools: null,
+    bullets: [
+      `Built brand, Webflow site, and product catalog from scratch.`,
+      `Handled all tech, marketing, and ops for early-stage startup. `,
+    ],
+    tools: [],
+    location: "Nashville, TN",
   },
   {
-    id: "desirem",
+    id: "swftw",
     duration: "Jan 2020 - May 2023",
-    company: "Desirem",
+    company: "SWFTW, LLC",
+    companyLink: "",
+    companyDescription: "E-Commerce and Marketplace Retailer",
     role: "Founder",
-    companyLink: null,
-    description:
-      "Launched an e-commerce venture that danced on the tightrope of financial equilibrium for three glorious years. Along the way learning the hard way: pricing, advertising, marketing, and what makes a business valuable in the first place.",
-    tools: null,
+    bullets: [
+      `
+        Grew e-commerce revenue 300% YOY via data-driven A/B tests with
+        products, ads, pricing, and UI.
+      `,
+      `
+        Cut fulfillment costs 10%, boosting profit margins 7% through supply
+        chain optimizations.
+      `,
+    ],
+    tools: [],
+    location: "Remote",
   },
 ];

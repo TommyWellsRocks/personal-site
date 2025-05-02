@@ -1,38 +1,39 @@
+import Link from "next/link";
+
 import { ToolList } from "../ToolList";
 import { SectionHeader } from "./SectionHeader";
+import { ArrowUpRight } from "lucide-react";
 
 import { experiences } from "~/data/experiences";
-import { ArrowUpRight } from "lucide-react";
-import Link from "next/link";
 
 export function ExperienceSection() {
   return (
     <section className="flex flex-col items-start gap-y-8">
       <SectionHeader header="Experience" />
-      <div className="flex flex-col gap-y-10">
-        {experiences.map((position, index) => (
-          <div
-            key={index}
-            className="flex scroll-mt-[100px] flex-col sm:flex-row"
-            id={position.id}
-          >
-            <span className="min-w-[200px] text-xs text-slate-500 sm:text-sm">
-              {position.duration.toUpperCase()}
-            </span>
 
-            <div className="flex flex-col gap-y-2">
-              <span className="text-slate-200">
-                {position.role}
-                {position.company ? ` @ ${position.company}` : ""}
-              </span>
-              <span className="text-sm font-light">{position.description}</span>
-              {position.tools?.length ? (
-                <ToolList tools={position.tools} />
-              ) : null}
+      {experiences.map((i, key) => (
+        <div className="flex scroll-mt-[100px]" key={key} id={i.id}>
+          <Date duration={i.duration} />
+
+          <div className="flex flex-col gap-y-2">
+            <div className="flex flex-col items-start">
+              <Link href={i.companyLink} className="text-slate-200">
+                {i.company}
+              </Link>
+              <span className="text-sm italic text-slate-300">{i.role}</span>
             </div>
+
+            <ul className="ml-4 flex list-disc flex-col gap-y-2 text-sm font-light">
+              {i.bullets.map((i, key) => (
+                <li key={key}>{i}</li>
+              ))}
+            </ul>
+
+            <ToolList tools={i.tools} />
           </div>
-        ))}
-      </div>
+        </div>
+      ))}
+
       <Link
         target="_blank"
         href="/resume.pdf"
@@ -43,5 +44,13 @@ export function ExperienceSection() {
         </span>
       </Link>
     </section>
+  );
+}
+
+function Date({ duration }: { duration: string }) {
+  return (
+    <span className="min-w-[220px] text-xs text-slate-500 sm:text-sm">
+      {duration.toUpperCase()}
+    </span>
   );
 }
