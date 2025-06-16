@@ -1,6 +1,7 @@
-import "~/styles/globals.css";
+import "~/app/globals.css";
 
 import { GeistSans } from "geist/font/sans";
+import { Analytics } from "@vercel/analytics/next";
 import { HeaderNav } from "~/components/layout/HeaderNav";
 import { Footer } from "~/components/layout/Footer";
 import Script from "next/script";
@@ -22,7 +23,7 @@ const inMeasureScript = `(function () {
     element.id = "im-script";
     document.head.appendChild(element);
   }
-})();`
+})();`;
 
 export default function RootLayout({
   children,
@@ -33,8 +34,9 @@ export default function RootLayout({
       className={`${GeistSans.variable} bg-slate-900 text-slate-400`}
     >
       <body className="flex min-h-screen flex-col items-center gap-y-12 px-4 sm:px-10">
+        <Analytics />
         <HeaderNav />
-        <main className="w-full max-w-[700px] my-32">{children}</main>
+        <main className="my-32 w-full max-w-[700px]">{children}</main>
         <Footer />
         <Script
           id="inmeasure-script"

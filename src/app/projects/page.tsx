@@ -52,13 +52,19 @@ export default function Projects() {
                 )}
 
                 <div className="z-10 flex w-full flex-col items-start justify-end gap-y-2 rounded-lg border-4 border-slate-700 bg-gradient-to-b from-transparent to-slate-900 px-2 py-4 hover:border-slate-600 sm:p-10">
-                  <Link
-                    target="_blank"
-                    href={project.link}
-                    className="flex text-3xl font-bold text-slate-300 hover:text-slate-100"
-                  >
-                    {project.name} <ArrowUpRight size={20} />
-                  </Link>
+                  {project.link ? (
+                    <Link
+                      target="_blank"
+                      href={project.link}
+                      className="flex text-3xl font-bold text-slate-300 hover:text-slate-100"
+                    >
+                      {project.name} <ArrowUpRight size={20} />
+                    </Link>
+                  ) : (
+                    <span className="flex text-3xl font-bold text-slate-300">
+                      {project.name}
+                    </span>
+                  )}
                   <span className="font-light">{project.shortSummary}</span>
                   <ToolList tools={project.tools} />
                 </div>

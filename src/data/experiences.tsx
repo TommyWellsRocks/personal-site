@@ -1,85 +1,129 @@
 export const experiences = [
   {
-    id: "bedroc",
-    duration: "Apr 2025 - May 2025",
-    company: "Bedroc",
-    companyLink: "https://bedroc.com/",
-    companyDescription: "IT Resources Firm",
-    role: "Freelance Full Stack Developer",
+    id: "staticplate",
+    startDate: new Date("Apr 2025"),
+    endDate: "",
+    company: "StaticPlate",
+    companyLink: "",
+    companyDescription: "Cloud File Storage",
+    role: "Personal Project",
     bullets: [
-      `
-        Built and deployed full-stack TypeScript/React/Next.js site under 4
-        weeks.
-      `,
-      `Integrated Contentful CMS for non-technical content management.`,
+      "Built a scalable file storage application with AWS S3 for cloud uploads.",
+      "Implemented Next-Auth.js for OAuth and email-based authentication.",
+      "Integrated PostgreSQL for secure metadata management and fast file navigation.",
     ],
-    tools: ["TypeScript", "React", "Next.js", "Contentful", "Vercel"],
+    tools: [
+      "TypeScript",
+      "React",
+      "Next.js",
+      "PostgreSQL",
+      "Prisma",
+      "Next-Auth",
+      "AWS S3",
+      "Vercel",
+    ],
+    location: "Remote",
+  },
+  {
+    id: "videobly",
+    startDate: new Date("Apr 2025"),
+    endDate: "",
+    company: "Videobly",
+    companyLink: "",
+    companyDescription: "YouTube Downloader",
+    role: "Personal Project",
+    bullets: [
+      "Engineered a YouTube downloader with FastAPI backend and React frontend.",
+      "Designed RESTful APIs enabling seamless video retrieval and download.",
+      "Achieved 93% backend services coverage with Pytest unit tests.",
+    ],
+    tools: ["TypeScript", "React", "Next.js", "Python", "FastAPI"],
     location: "Remote",
   },
   {
     id: "inmeasure",
-    duration: "Nov 2024 - Dec 2024",
+    startDate: new Date("Nov 2024"),
+    endDate: "",
     company: "InMeasure",
     companyLink: "https://inmeasure.com/",
     companyDescription: "Website Analytics Platform",
     role: "Personal Project",
     bullets: [
-      `
-        Developed tool with React/TypeScript/PostgreSQL/Next.js handling 405+
-        daily requests.
-      `,
-      `
-        Enabled one-line code integration for real-time data collection across 3
-        sites.
-      `,
+      `Built a real-time analytics dashboard that handles 400+ daily requests.`,
+      `Developed one-line JavaScript integration for live data collection.`,
     ],
-    tools: ["React", "Next.js", "TypeScript", "PostgreSQL", "Vercel"],
-    location: "Remote",
-  },
-  {
-    id: "marvelous-light-media",
-    duration: "Jul 2024 - Aug 2024",
-    company: "Marvelous Light Media",
-    companyLink: "https://marvelouslightmedia.com/",
-    companyDescription: "Wedding Videography Company",
-    role: "Wedding Videography Company",
-    bullets: [
-      `
-      Launched React/Next.js site scoring a 92+ Lighthouse score across
-      devices.
-      `,
-      `
-      Boosted organic traffic 36%, achieving #1 Google rank for brand
-      keywords.
-      `,
-      `Cut load times 80% and bandwidth costs 70% with global CDN.`,
+    tools: [
+      "TypeScript",
+      "React",
+      "Next.js",
+      "PostgreSQL",
+      "Drizzle ORM",
+      "Auth.js",
+      "Vercel",
     ],
-    tools: ["React", "Next.js", "Netlify"],
     location: "Remote",
   },
   {
     id: "temple",
-    duration: "May 2024 - Dec 2024",
+    startDate: new Date("May 2024"),
+    endDate: "",
     company: "Temple",
     companyLink: "https://trytemple.com/",
     companyDescription: "Fitness Tracking Platform",
     role: "Personal Project",
     bullets: [
-      `
-        Engineered a TypeScript/React/PostgreSQL/Next.js application with 200+
-        logged workouts.
-      `,
-      `
-        Scraped 4,000+ exercises via Python/Go, saving 65+ manual dev hours.
-      `,
-      `Reduced database queries by 90%, reducing load times by 1.8s.`,
+      `Developed a fitness app with 200+ logged workouts and real-time stats.`,
+      `Automated scraping of 4,000+ exercises using Python and Go.`,
     ],
-    tools: ["React", "Next.js", "TypeScript", "PostgreSQL", "Vercel"],
+    tools: [
+      "TypeScript",
+      "React",
+      "Next.js",
+      "PostgreSQL",
+      "Python",
+      "Go",
+      "Drizzle ORM",
+      "Auth.js",
+      "Vercel",
+    ],
+    location: "Remote",
+  },
+  {
+    id: "bedroc",
+    startDate: new Date("Apr 2025"),
+    endDate: new Date("Jun 2025"),
+    company: "Bedroc",
+    companyLink: "https://bedroc.com/",
+    companyDescription: "IT Resources Firm",
+    role: "Freelance Full Stack Developer",
+    bullets: [
+      `Built and deployed a scalable company website with a blog and downloadable resources.`,
+      `Integrated Contentful CMS for seamless content management for non-technical users.`,
+      `Implemented secure contact forms with reCAPTCHA and automated email notifications.`,
+    ],
+    tools: ["TypeScript", "React", "Next.js", "Contentful", "Resend", "Vercel"],
+    location: "Remote",
+  },
+  {
+    id: "marvelous-light-media",
+    startDate: new Date("Jul 2024"),
+    endDate: new Date("Aug 2024"),
+    company: "Marvelous Light Media",
+    companyLink: "https://marvelouslightmedia.com/",
+    companyDescription: "Wedding Videography Company",
+    role: "Freelance Full Stack Developer",
+    bullets: [
+      `Launched a company website with a 92+ Lighthouse score across devices.`,
+      `Increased organic traffic by 36%, securing #1 Google rank for brand keywords.`,
+      `Reduced load times by 80% and bandwidth costs by 70% using a global CDN.`,
+    ],
+    tools: ["TypeScript", "React", "Next.js", "Wistia CDN", "Netlify"],
     location: "Remote",
   },
   {
     id: "buffd-up-coatings",
-    duration: "Jul 2023 - Dec 2023",
+    startDate: new Date("Jul 2023"),
+    endDate: new Date("Dec 2023"),
     company: "Buff'd Up Coatings, LLC",
     companyLink: "",
     companyDescription: "Concreate Coatings Startup",
@@ -93,20 +137,15 @@ export const experiences = [
   },
   {
     id: "swftw",
-    duration: "Jan 2020 - May 2023",
+    startDate: new Date("Jan 2020"),
+    endDate: new Date("May 2023"),
     company: "SWFTW, LLC",
     companyLink: "",
     companyDescription: "E-Commerce and Marketplace Retailer",
     role: "Founder",
     bullets: [
-      `
-        Grew e-commerce revenue 300% YOY via data-driven A/B tests with
-        products, ads, pricing, and UI.
-      `,
-      `
-        Cut fulfillment costs 10%, boosting profit margins 7% through supply
-        chain optimizations.
-      `,
+      `Grew e-commerce revenue 300% YOY via data-driven A/B tests with products, ads, pricing, and UI.`,
+      `Cut fulfillment costs by 10%, boosting profit margins by 7% through supply chain optimizations.`,
     ],
     tools: [],
     location: "Remote",
