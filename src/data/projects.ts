@@ -42,7 +42,7 @@ export const projects = [
     id: "inmeasure",
     name: "InMeasure",
     img: InMeasurePreview,
-    githubLink: "",
+    githubLink: "https://github.com/TommyWellsRocks/inmeasure",
     shortSummary: "Website analytics platform.",
     description:
       "Web/Product analytics tool to track and monitor real-time site analytics data.",
@@ -62,7 +62,7 @@ export const projects = [
     id: "temple",
     name: "Temple",
     img: TemplePreview,
-    githubLink: "",
+    githubLink: "https://github.com/TommyWellsRocks/temple",
     shortSummary: "Fitness tracking platform.",
     description:
       "Fitness app for recording and creating workouts. Customize workouts, record sets, view history, keep notes, and more.",
@@ -82,13 +82,13 @@ export const projects = [
   },
   {
     id: "this",
-    name: "TommyWells.me",
+    name: "Personal Site",
     img: ThisPreview,
-    githubLink: "",
+    githubLink: "https://github.com/TommyWellsRocks/personal-site",
     shortSummary: "This wonderful site.",
     description: "A portfolio / resume site to show off some of my work.",
     tools: ["React", "Next.js", "Vercel"],
-    link: "https://www.tommywells.me",
+    link: "https://www.tommywellsrocks.com",
     video: "",
   },
 ];
