@@ -47,25 +47,11 @@ export function InfoSection({ project }: { project: Project }) {
         <span className="text-sm font-light">{project.shortSummary}</span>
       </div>
 
-      {project.video ? (
-        <video
-          src={project.video}
-          muted
-          autoPlay
-          loop
-          controls
-          className="aspect-video rounded-xl object-cover object-top"
-        >
-          Your browser does not support this video {" :("}. That&apos;s too bad!
-          It&apos;s a really good video!
-        </video>
-      ) : (
-        <Image
-          src={project.img}
-          alt={`${project.name} Preview`}
-          className="aspect-video rounded-xl object-cover object-top"
-        />
-      )}
+      <Image
+        src={project.img}
+        alt={`${project.name} Preview`}
+        className="aspect-video rounded-xl object-cover object-top"
+      />
 
       {sectionInfos.map((info, index) => (
         <div key={index} className="flex flex-col gap-y-2">

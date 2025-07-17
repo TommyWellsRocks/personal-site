@@ -24,7 +24,6 @@ export const projects = [
       "Vercel",
     ],
     link: "",
-    video: "",
   },
   {
     id: "videobly",
@@ -36,7 +35,6 @@ export const projects = [
       "A simple platform to download YouTube videos selecting resolution or crisp audio only.",
     tools: ["TypeScript", "React", "Next.js", "Python", "FastAPI"],
     link: "",
-    video: "",
   },
   {
     id: "inmeasure",
@@ -56,7 +54,6 @@ export const projects = [
       "Vercel",
     ],
     link: "https://www.inmeasure.com",
-    video: "/InMeasureVideo.mp4",
   },
   {
     id: "temple",
@@ -78,7 +75,6 @@ export const projects = [
       "Vercel",
     ],
     link: "https://www.trytemple.com",
-    video: "/TempleVideo.mp4",
   },
   {
     id: "this",
@@ -89,6 +85,5 @@ export const projects = [
     description: "A portfolio / resume site to show off some of my work.",
     tools: ["React", "Next.js", "Vercel"],
     link: "https://www.tommywellsrocks.com",
-    video: "",
   },
 ];

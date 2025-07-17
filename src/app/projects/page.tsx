@@ -37,19 +37,7 @@ export default function Projects() {
                 className="relative flex min-h-[350px] scroll-mt-[100px] text-start sm:aspect-video"
                 id={project.id}
               >
-                {project.video ? (
-                  <video
-                    src={project.video}
-                    muted
-                    autoPlay
-                    loop
-                    className="absolute h-full w-full rounded-xl object-cover object-top"
-                  >
-                    <ProjectImage project={project} />
-                  </video>
-                ) : (
-                  <ProjectImage project={project} />
-                )}
+                <ProjectImage project={project} />
 
                 <div className="z-10 flex w-full flex-col items-start justify-end gap-y-2 rounded-lg border-4 border-slate-700 bg-gradient-to-b from-transparent to-slate-900 px-2 py-4 hover:border-slate-600 sm:p-10">
                   {project.link ? (
